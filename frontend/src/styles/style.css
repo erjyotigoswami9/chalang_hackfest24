@@ -1,0 +1,968 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+/* main navbar css */
+
+.navbar1{
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(149, 152, 238, 0.04) 0px 3px 5px;
+    height: 12vh;
+    width: 99.86vw;
+    /* background-color: rgb(209, 200, 200); */
+    background-image: linear-gradient(rgb(229, 209, 209),rgb(221, 238, 221),rgb(226, 226, 238));
+    animation-name: n1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes n1 {
+    50%{
+        background-image: linear-gradient(rgb(233, 221, 223),rgb(240, 222, 240),rgb(237, 237, 222));
+        transition: 2s ease-in-out;
+    }
+    80%{
+        background-image: linear-gradient(rgb(210, 229, 236),rgb(236, 220, 220),rgb(231, 231, 203));
+        transition: 2s ease-in-out;
+    }
+}
+.navbar1>div{
+    border: 1px solid transparent;
+    width: 98vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.navbar1>div>div:nth-child(1){
+    border: 1px solid transparent;
+}
+.navbar1>div>div:nth-child(1)>img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+.navbar1>div>div:nth-child(1)>img:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+.navbar1>div>div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20vw;
+    border: 1px solid transparent;
+}
+.navbar1>div>div:nth-child(2)>div:nth-child(1){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    border: 1px solid transparent;
+}
+.navbar1>div>div:nth-child(2)>div:nth-child(1)>h3{
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(28, 25, 29);
+    /* color: white; */
+    font-family:monospace;
+}
+.navbar1>div>div:nth-child(2)>div:nth-child(1)>h3:hover{
+    color: rgb(61, 58, 58);
+    /* color: gray; */
+    scale: 1.05;
+    cursor: pointer;
+}
+.navbar1>div>div:nth-child(2)>div:nth-child(2){
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+.navbar1>div>div:nth-child(2)>div:nth-child(2)>img{
+    width: 30px;
+    height: 30px;
+}
+.navbar1>div>div:nth-child(2)>div:nth-child(2)>img:hover{
+    scale: 1.04;
+    cursor: pointer;
+}
+
+.navbar1>div>div:nth-child(3){
+    border: 1px solid transparent;
+    display: none;
+}
+.navbar1>div>div:nth-child(3)>button{
+    border: 1px solid rgba(128, 128, 128, 0.305);
+    background-color: white;
+    border-radius: 12px;
+}
+.navbar1>div>div:nth-child(3)>button>hr{
+    width: 30px;
+    border: 0.1px solid gray;
+}
+.navbar1>div>div:nth-child(3)>button>hr:nth-child(2){
+    width: 10px;
+    padding-left: 10px;
+    margin-left: 9px;
+    border: 0.1px solid rgb(55, 131, 208);
+}
+.navbar1>div>div:nth-child(3)>button:hover{
+    scale: 1.06;
+    cursor: pointer;
+}
+.navbar1>div>div:nth-child(3)>button>hr:nth-child(2):hover{
+    padding-left: 0px;
+    margin-left: 0px;
+    width: 30px;
+    border: 0.1px solid grey;
+}
+@media all and (max-width:800px) {
+    .navbar1>div>div:nth-child(3){
+        display: block;
+    }
+    .navbar1>div>div:nth-child(2){
+        display: none;
+    }
+}
+@media all and (max-width:180px) {
+    .navbar1{
+        width:fit-content;
+    }
+    .navbar1>div{
+        width: fit-content;
+    }
+}
+
+/* media responsive navbar css */
+
+.navbar2{
+    height: 99vh;
+    width: 97.4vw;
+    border: 1px solid transparent;
+    padding: 10px;
+    background-image: url("https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+.navbar2>div{
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navbar2>div>div:nth-child(1){
+    width: 96vw;
+    padding: 10px;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar2>div>div:nth-child(1)>button{
+    background-color: white;
+    border: 1px solid whitesmoke;
+    padding: 4px;
+}
+.navbar2>div>div:nth-child(1)>button:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+.navbar2>div>div:nth-child(1)>img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.navbar2>div>div:nth-child(1)>img:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+.navbar2>div>div:nth-child(2){
+    margin-top: 10%;
+}
+.navbar2>div>div:nth-child(2)>h3{
+    font-weight: normal;
+    font-size: 14px;
+    font-family: monospace;
+}
+.navbar2>div>div:nth-child(2)>h3:hover{
+    color: gray;
+    cursor: pointer;
+    scale: 1.05;
+}
+.navbar3{
+    display: block;
+}
+.navbar3{
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(149, 152, 238, 0.04) 0px 3px 5px;
+    height: 12vh;
+    width: 99.86vw;
+    background-image: linear-gradient(rgb(229, 209, 209),rgb(221, 238, 221),rgb(226, 226, 238));
+    animation-name: n1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes n1 {
+    50%{
+        background-image: linear-gradient(rgb(233, 221, 223),rgb(240, 222, 240),rgb(237, 237, 222));
+        transition: 2s ease-in-out;
+    }
+    80%{
+        background-image: linear-gradient(rgb(210, 229, 236),rgb(236, 220, 220),rgb(231, 231, 203));
+        transition: 2s ease-in-out;
+    }
+}
+.navbar3>div{
+    border: 1px solid transparent;
+    width: 98vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.navbar3>div>div:nth-child(1){
+    border: 1px solid transparent;
+}
+.navbar3>div>div:nth-child(1)>img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+.navbar3>div>div:nth-child(1)>img:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+.navbar3>div>div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20vw;
+    border: 1px solid transparent;
+}
+.navbar3>div>div:nth-child(2)>div:nth-child(1){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    border: 1px solid transparent;
+}
+.navbar3>div>div:nth-child(2)>div:nth-child(1)>h3{
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(28, 25, 29);
+    font-family:monospace;
+}
+.navbar3>div>div:nth-child(2)>div:nth-child(1)>h3:hover{
+    color: rgb(61, 58, 58);
+    scale: 1.05;
+    cursor: pointer;
+}
+.navbar3>div>div:nth-child(2)>div:nth-child(2){
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+.navbar3>div>div:nth-child(2)>div:nth-child(2)>img{
+    width: 30px;
+    height: 30px;
+}
+.navbar3>div>div:nth-child(2)>div:nth-child(2)>img:hover{
+    scale: 1.04;
+    cursor: pointer;
+}
+
+.navbar3>div>div:nth-child(3){
+    border: 1px solid transparent;
+    display: none;
+}
+.navbar3>div>div:nth-child(3)>button{
+    border: 1px solid rgba(128, 128, 128, 0.305);
+    background-color: white;
+    border-radius: 12px;
+}
+.navbar3>div>div:nth-child(3)>button>hr{
+    width: 30px;
+    border: 0.1px solid gray;
+}
+.navbar3>div>div:nth-child(3)>button>hr:nth-child(2){
+    width: 10px;
+    padding-left: 10px;
+    margin-left: 9px;
+    border: 0.1px solid rgb(55, 131, 208);
+}
+.navbar3>div>div:nth-child(3)>button:hover{
+    scale: 1.06;
+    cursor: pointer;
+}
+.navbar3>div>div:nth-child(3)>button>hr:nth-child(2):hover{
+    padding-left: 0px;
+    margin-left: 0px;
+    width: 30px;
+    border: 0.1px solid grey;
+}
+@media all and (max-width:800px) {
+    .navbar3>div>div:nth-child(3){
+        display: block;
+    }
+    .navbar3>div>div:nth-child(2){
+        display: none;
+    }
+}
+@media all and (max-width:180px) {
+    .navbar3{
+        width:fit-content;
+    }
+    .navbar3>div{
+        width: fit-content;
+    }
+}
+
+
+@media all and (max-width:800px) {
+    .navbar2{
+        display: block;
+    }
+    .navbar3{
+        display: none;
+    }
+}
+@media all and (max-width:200px) {
+    .navbar2{
+        width: fit-content;
+        height: 120vh;
+    }
+    .navbar2>div>div:nth-child(1){
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .navbar2>div>div:nth-child(1)>button{
+        background-color: black;
+    }
+}
+
+
+/* copyright div css */
+
+.copyrightDiv1{
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    font-family: monospace;
+    padding: 10px;
+    text-align: center;
+}
+
+/* signup page css */
+
+.loginDiv1{
+    border: 1px solid transparent;
+    width: 99.9vw;
+    height: 99vh;
+    background-color: rgb(41,48,56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginDiv1>div{
+    border: 1px solid transparent;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.loginDiv1>div>div:nth-child(1){
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0,169,232);
+}
+.loginDiv1>div>div:nth-child(1)>img{
+    width: 100px;
+    height: 100px;
+}
+.loginDiv1>div>div:nth-child(1)>div>p{
+    color: white;
+    font-weight: 500;
+    font-family: monospace;
+    font-size: 18px;
+}
+.loginDiv1>div>div:nth-child(1)>div>h5{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+}
+.loginDiv1>div>div:nth-child(2){
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginDiv1>div>div:nth-child(2)>div>h3{
+    color: grey;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+}
+.loginDiv1>div>div:nth-child(2)>div>form{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: gray;
+}
+.loginDiv1>div>div:nth-child(2)>div>form>input{
+    outline: 0.1px solid transparent;
+    margin-top: 6px;
+    color: skyblue;
+    border: 0.1px solid grey;
+    padding: 4px;
+    font-size: 12px;
+}
+.loginBtn{
+    width: 100%;
+    border: 1px solid transparent;
+    background-color: skyblue;
+    color: white;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.loginBtn:hover{
+    background-color: rgb(0,169,232);
+    cursor: pointer;
+}
+.loginDiv1>div>div:nth-child(2)>div>p{
+    font-size: 10px;
+    color: skyblue;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: underline;
+}
+@media all and (max-width:1400px) {
+    .loginDiv1>div{
+    width: 70%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+}
+@media all and (max-width:1200px) {
+    .loginDiv1>div{
+    width: 90%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+}
+@media all and (max-width:800px) {
+    .loginDiv1>div{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+}
+@media all and (max-width:800px) {
+    .loginDiv1>div{
+    width: 98%;
+}
+}
+@media all and (max-width:200px) {
+    .loginBtn{
+        width: fit-content;
+    }
+    .loginDiv1>div{
+        width: fit-content;
+}
+}
+
+/* product listing page css */
+
+.productMainDiv{
+    background-color: rgb(201, 199, 199);
+    padding-top: 8vh;
+    padding-bottom: 20vh;
+}
+.productsDiv1{
+    border: 1px solid transparent;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 12px;
+}
+.productsDiv1>div{
+    border: 1px solid whitesmoke;
+    border-radius: 12px;
+    background-color: white;
+    text-align: center;
+    padding: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.productsDiv1>div:hover{
+    scale: 1.02;
+    cursor: pointer;
+}
+.productsDiv1>div>img{
+    width: 100px;
+    height: 100px;
+}
+.productsDiv1>div>button{
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(182, 210, 182);
+    color: white;
+}
+.productsDiv1>div>button:hover{
+    background-color: skyblue;
+    cursor: pointer;
+    scale: 1.05;
+}
+.pageDiv1{
+    border: 1px solid transparent;
+    margin-top: 20px;
+    padding: 20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.pageDiv1>button{
+    padding: 5px 8px;
+    border: 1px solid whitesmoke;
+    background-color: white;
+    font-family: monospace;
+    border-radius: 4px;
+}
+.pageDiv1>button:hover{
+    cursor: pointer;
+    scale: 1.03;
+    background-color: whitesmoke;
+    color: gray;
+}
+@media all and (max-width:1200px) {
+    .productsDiv1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media all and (max-width:800px) {
+    .productsDiv1{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media all and (max-width:160px) {
+    .productMainDiv{
+        width: fit-content;
+    }
+    .productsDiv1{
+        width: fit-content;
+    }
+    .productsDiv1>div>img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+/* cart css */
+
+.cartListDiv1{
+    background-color: rgb(72, 76, 63);
+    padding-top: 30px;
+    padding-bottom: 40vh;
+}
+.cartListDiv2{
+    border: 1px solid transparent;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.cartListDiv2>div{
+    border: 1px solid whitesmoke;
+    border-radius: 12px;
+    background-color: white;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.cartListDiv2>div:hover{
+    scale: 1.02;
+    cursor: pointer;
+}
+.changeStyleDiv2{
+    border: 1px solid transparent;
+    width: 96%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.changeStyleDiv2>div:nth-child(1){
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.changeStyleDiv2>div:nth-child(2){
+    border: 1px solid transparent;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.changeStyleDiv2>div>h3{
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+.changeStyleDiv2>div>img{
+    width: 40px;
+    height: 40px;
+}
+.cartBtn1{
+    border: 1px solid transparent;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    margin-right: 10px;
+}
+.cartBtn1+span{
+    margin-right: 10px;
+}
+.cartBtn1:hover{
+    background-color: rgba(164, 205, 222, 0.137);
+    cursor: pointer;
+    scale: 1.02;
+}
+.cartBtn2{
+    border: 1px solid transparent;
+    padding: 6px;
+    border-radius: 4px;
+    background-color: rgb(193, 233, 248);
+    color: black;
+    margin-right: 10px;
+}
+.cartBtn2:hover{
+    background-color: rgba(179, 204, 214, 0.137);
+    cursor: pointer;
+    scale: 1.02;
+}
+.pageDiv1{
+    border: 1px solid transparent;
+    margin-top: 20px;
+    padding: 20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.pageDiv1>button{
+    padding: 5px 8px;
+    border: 1px solid whitesmoke;
+    background-color: white;
+    font-family: monospace;
+    border-radius: 4px;
+}
+.pageDiv1>button:hover{
+    cursor: pointer;
+    scale: 1.03;
+    background-color: whitesmoke;
+    color: gray;
+}
+.deleteItemCartBtn{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid whitesmoke;
+    padding: 4px;
+    color: white;
+    float: right;
+}
+.deleteItemCartBtn:hover{
+    scale: 1.02;
+    cursor: pointer;
+}
+@media all and (max-width:1200px) {
+    .cartListDiv2{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media all and (max-width:800px) {
+    .cartListDiv2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media all and (max-width:600px) {
+    .cartListDiv2{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media all and (max-width:300px) {
+    .changeStyleDiv2{
+        display: flex;
+        flex-direction: column;
+    }
+    .changeStyleDiv2>div:nth-child(1){
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 10%;
+        padding-right: 105;
+    }
+}
+@media all and (max-width:160px) {
+    .cartListDiv1{
+        width: fit-content;
+    }
+    .cartListDiv2{
+        width: fit-content;
+    }
+    .cartListDiv2>div>img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* share page css */
+
+.shareDiv1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    height: 86vh;
+}
+
+.chatBtn{
+    padding: 12px;
+    font-weight: 600;
+    border-radius: 12px;
+    color: white;
+    background-color: lightgreen;
+    border: 1px solid transparent;
+}
+.chatBtn:hover{
+    background-color: lightslategray;
+    cursor: pointer;
+}
+
+/* chat css */
+
+.chatDiv1{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border: 1px solid transparent;
+    background-color: rgba(216, 191, 216, 0.166);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.handleStyleCartChatDiv1{
+    width: 16vw;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    background-color: white;
+}
+.handleStyleCartChatDiv1>div:nth-child(2)>div:nth-child(1)>img{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+.handleStyleCartChatDiv1>div:nth-child(1){
+    border: 1px solid transparent;
+}
+.handleStyleCartChatDiv1>div:nth-child(1)>button{
+    float: right;
+}
+.handleStyleCartChatDiv1>div:nth-child(2){
+    display: grid;
+    grid-template-columns: 40% 60%;
+    border: 1px solid transparent;
+}
+.handleStyleCartChatDiv1>div:nth-child(2)>div{
+    border: 1px solid transparent;
+}
+.handleStyleCartChatDiv1>div:nth-child(2)>div:nth-child(1){       
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.handleStyleCartChatDiv1>div:nth-child(2)>div:nth-child(2){
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10px;
+ }
+ .chatUserDetailsDiv1{
+    border: 1px solid transparent;
+    padding: 10px;
+    margin-top: 100px;
+ }
+ .chatUserDetailsDiv1>div{
+    border: 1px solid whitesmoke;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    background-color: rgba(218, 231, 237, 0.189);
+    color: navy;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+ }
+ .chatUserDetailsDiv1>div>p:nth-child(2){
+    color: rgb(93, 90, 65);
+    text-align: right;
+ }
+ .chatUserDetailsDiv1>div>p:nth-child(3){
+    color:rgb(73, 54, 49);
+    text-align: justify;
+ }
+ .formChatDiv1{
+    border: 1px solid transparent;
+    padding: 10px;
+    margin-top: 60px;
+ }
+ .formChatDiv1>div:nth-child(1){
+    text-align: center;
+ }
+ .formChatDiv1>div:nth-child(1)>button{
+    background-color: lightgrey;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 12px;
+    padding: 12px 10px ;
+    border: 1px solid whitesmoke;
+ }
+ .formChatDiv1>div:nth-child(1)>button:hover{
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+ }
+ .formChatDiv1>div:nth-child(2){
+    border: 1px solid transparent;
+    padding: 10px;
+ }
+ .formChatDiv1>div:nth-child(2)>form{
+    margin-top: 40px;
+ }
+ .formChatDiv1>div:nth-child(2)>form>input{
+    width: 20vw;
+    padding: 10px;
+    outline: 0.1px solid rgba(188, 218, 229, 0.721);
+    border: 0.1px solid rgba(181, 216, 230, 0.763);
+    color: cadetblue;
+ }
+ .formChatDiv1>div:nth-child(2)>form>button{
+    padding: 8px;
+    background-color: rgb(91, 65, 93);
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 4px;;
+ }
+ .formChatDiv1>div:nth-child(2)>form>button:hover{
+    background-color: green;
+    cursor: pointer;
+ }
+ 
+ @media all and (max-width:1400px) {
+    .handleStyleCartChatDiv1{
+        width: 24vw;
+    }
+ }
+ @media all and (max-width:1200px) {
+    .handleStyleCartChatDiv1{
+        width: 30vw;
+    }
+ }
+ @media all and (max-width:1000px) {
+    .handleStyleCartChatDiv1{
+        width: 40vw;
+    }
+    .formChatDiv1>div:nth-child(2)>form>input{
+        width: 40vw;
+    }
+ }
+ @media all and (max-width:800px) {
+    .handleStyleCartChatDiv1{
+        width: 60vw;
+    }
+}
+@media all and (max-width:600px) {
+    .handleStyleCartChatDiv1{
+        width: 80vw;
+    }
+    .formChatDiv1>div:nth-child(2)>form>input{
+        width: 60vw;
+    }
+ }
+ @media all and (max-width:400px) {
+    .handleStyleCartChatDiv1{
+        width: 88vw;
+    }
+    .formChatDiv1>div:nth-child(2)>form>input{
+        width: 80vw;
+    }
+    .formChatDiv1>div:nth-child(2)>form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+ }
+ @media all and (max-width:250px) {
+    .handleStyleCartChatDiv1>div:nth-child(2){
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .formChatDiv1>div:nth-child(2)>form>input{
+        width: 100px;
+    }
+ }
+ 
+ @media all and (max-width:150px) {
+    .chatDiv1, .handleStyleCartChatDiv1,.formChatDiv1{
+        width: fit-content;
+    }
+ }

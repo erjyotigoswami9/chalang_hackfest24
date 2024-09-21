@@ -29,6 +29,7 @@
                 <ul>
                     <li>Login</li>
                     <li>Logout</li>
+                    <li>Pagination</li>
                     <li>Cart</li>
                     <li>Cart Sharing</li>
                     <li>Product List Display</li>
